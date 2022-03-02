@@ -1,0 +1,39 @@
+DensetNet 121
+	Accuracy of the network: 98.03921568627452 %
+	Accuracy of Healthy: 100.0 %
+	Accuracy of Sick: 94.73684210526316 %
+
+	nn.Linear(1024, 500),
+	nn.ReLU(inplace=True),
+	nn.Linear(500, 2),
+
+DenseNet 169
+	Accuracy of the network: 98.03921568627452 %
+	Accuracy of Healthy: 100.0 %
+	Accuracy of Sick: 94.73684210526316 %
+
+	nn.Linear(1664, 500),
+	nn.ReLU(inplace=True),
+	nn.Linear(500, 2),
+
+DenseNet 161
+
+	Accuracy of the network: 96.07843137254902 %
+	Accuracy of Healthy: 100.0 %
+	Accuracy of Sick: 89.47368421052632 %
+
+	nn.Linear(2208, 1000),
+	nn.Linear(1000, 1000),
+	nn.Linear(1000, 2),
+
+DenseNet 201
+
+	Accuracy of the network: 96.07843137254902 %
+	Accuracy of Healthy: 96.875 %
+	Accuracy of Sick: 94.73684210526316 %
+
+	nn.Linear(1920, 840),
+	nn.Tanh(),
+	nn.Linear(840,840),
+	nn.Linear(840,2),
+	----------
